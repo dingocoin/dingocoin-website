@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://dingocoin.com/</loc>
+    <priority>1.00</priority>
+  </url>
+  <url>
+    <loc>https://dingocoin.com/Wallets</loc>
+    <priority>0.99</priority>
+  </url>
+  <url>
+    <loc>https://dingocoin.com/Charts-Exchanges</loc>
+    <priority>0.98</priority>
+  </url>
+  <url>
+    <loc>https://dingocoin.com/Community-Projects</loc>
+    <priority>0.97</priority>
+  </url>
+    <url>
+    <loc>https://dingocoin.com/Trailmap</loc>
+    <priority>0.96</priority>
+  </url>
+  <url>
+    <loc>https://dingocoin.com/Contact</loc>
+    <priority>0.95</priority>
+  </url>
+  <url>
+    <loc>https://dingocoin.com/Contact</loc>
+    <priority>0.95</priority>
+  </url>
+</urlset>
