@@ -76,7 +76,7 @@
                     <img class="d-block w-100" src="/data1/images/121a.gif" alt="Get Involved Header">
                 </div>
             </div>
-        </div>
+        </div></a>
 </header>
 
     <?php include ('includes/pages/net_data.php');?>
