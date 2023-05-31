@@ -54,13 +54,13 @@
     <script type="text/javascript" src="js/modal/stip_modal.js"></script>
 </head>
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-210617812-1"></script>
-<script>
+<!--<script>
     window.dataLayer = window.dataLayer || [];
     function gtag() { dataLayer.push(arguments); }
     gtag('js', new Date());
     gtag('config', 'UA-210617812-1');
 </script>
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-P30Q0K21WP"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-P30Q0K21WP"></script> -->
 <script>
     window.dataLayer = window.dataLayer || [];
     function gtag() { dataLayer.push(arguments); }

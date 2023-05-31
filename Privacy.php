@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-    <title>Dingocoin | Privacy Policy</title>
+    <title>Dingocoin | Charts & Exchanges</title>
 
     <meta content="Dingocoin is the most successful cryptocurrency fork of Dogecoin, with revolutionary innovations and unstoppable developments." name="description">
     <meta content="SuperTechDudes in conjunction with Dingocoin" name="author">
@@ -14,22 +14,22 @@
     <meta content="index,follow,all" name="googlebot">
     <meta content="global" name="distribution">
     <meta content="worldwide" name="coverage">
-    <link href="https://dingocoin.org/" rel="canonical">
+    <link href="https://dingocoin.com/" rel="canonical">
     <meta content="en" name="language">
     <meta content="100" name="alexa">
     <meta content="Dingocoin | Community Development. Worldwide Adoption." property="og:title">
     <meta content="Dingocoin is the most successful cryptocurrency fork of Dogecoin, with revolutionary innovations and unstoppable developments." property="og:description">
     <meta content="website" property="og:type">
-    <meta content="https://dingocoin.org/" property="og:url">
-    <meta content="https://dingocoin.org/img/logos/dingocoin/logo/dingocoin.png" property="og:image">
+    <meta content="https://dingocoin.com/" property="og:url">
+    <meta content="https://dingocoin.com/img/logos/dingocoin/logo/dingocoin.png" property="og:image">
     <meta content="Dingocoin" property="og:site_name">
     <meta content="website" property="og:type">
     <meta content="en_US" property="og:locale">
     <meta content="Dingocoin is the most successful cryptocurrency fork of Dogecoin, with revolutionary innovations and unstoppable developments." name="twitter:card">
     <meta content="Dingocoin | Community Development. Worldwide Adoption." name="twitter:title">
     <meta content="Dingocoin is the most successful cryptocurrency fork of Dogecoin, with revolutionary innovations and unstoppable developments." name="twitter:description">
-    <meta content="https://dingocoin.org/img/logos/dingocoin/logo/dingocoin.png" name="twitter:image">
-    <meta content="https://dingocoin.org/" name="twitter:url">
+    <meta content="https://dingocoin.com/img/logos/dingocoin/logo/dingocoin.png" name="twitter:image">
+    <meta content="https://dingocoin.com/" name="twitter:url">
 
     <link href="/favicon.ico" rel="icon">
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
@@ -40,6 +40,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&family=Roboto:wght@500;700&display=swap" rel="stylesheet">
+
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
@@ -50,15 +51,16 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
 
+    <script type="text/javascript" src="js/modal/stip_modal.js"></script>
 </head>
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-210617812-1"></script>
-<script>
+<!--<script>
     window.dataLayer = window.dataLayer || [];
     function gtag() { dataLayer.push(arguments); }
     gtag('js', new Date());
     gtag('config', 'UA-210617812-1');
 </script>
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-P30Q0K21WP"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-P30Q0K21WP"></script> -->
 <script>
     window.dataLayer = window.dataLayer || [];
     function gtag() { dataLayer.push(arguments); }
