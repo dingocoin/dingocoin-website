@@ -64,11 +64,10 @@
     gtag('js', new Date());
     gtag('config', 'G-P30Q0K21WP');
 </script>
-
 <body>
     <?php include ('includes/pages/top_nav.html');?>
 
-    <header>
+<header>
     <a href="/Wallets">    
         <div id="carousel" class="carousel slide" data-ride="carousel">
             <div class="carousel-inner">
@@ -78,41 +77,43 @@
             </div>
         </div></a>
 </header>
-
-    <?php include ('includes/pages/net_data.php');?>
-
-    <?php
-    if (!@include('includes/pages/about.html')) {
-        echo '<div class="container-xxl py-5">
-	                <div class="container">
-                        <div class="text-center mx-auto  fadeInUp" data--delay="0.1s" style="max-width: 500px;">
-                            <h1 class="display-6">About Us</h1>
-                        </div>
+<?php
+$domain = 'https://explorer.dingocoin.com';  // Replace with the domain you want to check
+$headers = @get_headers($domain);
+if (!$headers || strpos($headers[0], '200') === false) {
+    // Domain is down or not returning a 200 OK status code
+    // Exclude the file here or perform any other necessary actions
+    } else {
+    // Domain is up and running
+    include ('includes/pages/net_data.php');
+    }
+if (!@include('includes/pages/about.html')) {
+    echo '<div class="container-xxl py-5">
+	        <div class="container">
+                <div class="text-center mx-auto  fadeInUp" data--delay="0.1s" style="max-width: 500px;">
+                    <h1 class="display-6">About Us</h1>
+                    </div>
                         <div class="row justify-content-center text-center">
                             <span>About Us Module Loading ...... <br> <small>Error: std-dxQH1</small></span>
                         </div> 
                     </div>
-                </div>
-                ';
-    }
-    ?>
-    <?php
+                </div>';
+            }
     if (!@include('includes/pages/featured_projects.html')) {
         echo '<div class="container-xxl py-5">
-	                <div class="container">
-                        <div class="text-center mx-auto  fadeInUp" data--delay="0.1s" style="max-width: 500px;">
-                            <h1 class="display-6">Featured Projects</h1>
-                        </div>
-                        <div class="row justify-content-center text-center">
-                            <span>Featured Projects Module Loading ......<br> <small>Error: std-dxQH1</small></span>
-                        </div> 
+	        <div class="container">
+                <div class="text-center mx-auto  fadeInUp" data--delay="0.1s" style="max-width: 500px;">
+                        <h1 class="display-6">Featured Projects</h1>
                     </div>
-                  </div>
-                 ';
-    }
-    ?>
-    <?php include ('includes/pages/footer.html');?>
-    <?php include ('includes/pages/2top.html'); ?>
+                    <div class="row justify-content-center text-center">
+                        <span>Featured Projects Module Loading ......<br> <small>Error: std-dxQH1</small></span>
+                    </div> 
+                </div>
+            </div>
+            ';
+        }
+    include ('includes/pages/footer.html');
+    include ('includes/pages/2top.html'); ?>
 
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
