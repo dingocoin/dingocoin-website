@@ -21,6 +21,6 @@
     //echo "New Trailmap Update Coming Soon! Time remaining: " . $days . " days, " . $hours . " hours, " . $minutes . " minutes, ";
     
     // New Trailmap Available Alert
-    echo "New Trailmap Now Available!";
+    echo "New Feature! Check Out Dingocoin Payments Now Available!";
     ?>
 </div>
