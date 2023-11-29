@@ -135,7 +135,7 @@ if ($err) {
                                     </div>
                                     <div class="col-md-2 d-flex align-items-center justify-content-center">
                                         <p></p><b>
-                                            <h6 class="text-white text-center">Network (TH/s)</h6>
+                                            <h6 class="text-white text-center">Network (GH/s)</h6>
                                             <h6 class="text-white text-center"><?php echo $dhash ?></h6>
                                         </b>
                                     </div>
