@@ -81,7 +81,7 @@
 
     <?php include 'includes/pages/trailmap-alert.php'; ?>
     <?php
-        if (!@include('includes/pages/trailmap_payments.html')) {
+        if (!@include('includes/pages/trailmap_mobile.html')) {
             echo '<div class="container-xxl py-5">
 	                <div class="container">
                         <div class="text-center mx-auto  fadeInUp" data--delay="0.1s" style="max-width: 500px;">
