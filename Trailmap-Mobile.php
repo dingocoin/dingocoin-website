@@ -74,7 +74,7 @@
         <div class="carousel-inner">
             <div class="carousel-item active">
                 <img class="d-block w-100" src="/data1/images/htrailmap.jpg"
-                    alt="Wallet Header">
+                    alt="Trailmap Header">
             </div>
         </div>
     </div>
@@ -82,16 +82,15 @@
     <?php include 'includes/pages/trailmap-alert.php'; ?>
     <?php
         if (!@include('includes/pages/trailmap_mobile.html')) {
-            echo '<div class="container-xxl py-5">
-	                <div class="container">
-                        <div class="text-center mx-auto  fadeInUp" data--delay="0.1s" style="max-width: 500px;">
-                            <h1 class="display-6">TrailMap Browser Wallet</h1>
-                        </div>
-                        <div class="row justify-content-center text-center">
-                            <span>TrailMap Browser Wallet Module Loading ......<br> <small>Error: <small>Error: std-dxQH1</small></span>
-                        </div> 
+            echo '<div class="container">
+                    <div class="text-center mx-auto  fadeInUp" data--delay="0.1s" style="max-width: 500px;">
+                        <h1 class="display-6">TrailMap Browser Wallet</h1>
                     </div>
-                  </div>
+                    <div class="row justify-content-center text-center">
+                        <span>Flip Module Loading ......<br> <small>Error: <small>Error: std-dxQH1</small></span>
+                    </div> 
+                </div>
+
                  ';
         }
     ?> 
@@ -107,7 +106,6 @@
     <script src="lib/owlcarousel/owl.carousel.min.js"></script>
     <script src="lib/counterup/counterup.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.0.47/jquery.fancybox.min.js"></script>
 
 </body>
