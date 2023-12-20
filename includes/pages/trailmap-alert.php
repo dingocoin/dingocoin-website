@@ -1,7 +1,7 @@
 <div class="alert alert-info text-center" role="alert">
     <?php
     // Set the message variable
-    $selectedMessage = '';
+    $selectedMessage = 'trailmap_now';
 
     // Display different messages based on the selected value
     switch ($selectedMessage) {
