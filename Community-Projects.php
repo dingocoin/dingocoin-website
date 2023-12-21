@@ -78,7 +78,7 @@
             </div>
         </div>
     </div>
-
+    <?php include 'includes/pages/trailmap-alert.php'; ?>
     <?php
         if (!@include('includes/pages/community_projects.html')) {
             echo '<div class="container-xxl py-5">
