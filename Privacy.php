@@ -70,6 +70,7 @@
 
 <body>
     <?php include ('includes/pages/top_nav.html');?>
+    <?php include 'includes/pages/trailmap-alert.php'; ?>
     <?php
         if (!@include('includes/pages/privacy.html')) {
             echo '<div class="container-xxl py-5">

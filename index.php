@@ -77,6 +77,7 @@
             </div>
         </div></a>
 </header>
+<?php include 'includes/pages/trailmap-alert.php'; ?>
 <?php
 $domain = 'https://explorer.dingocoin.com';  // Replace with the domain you want to check
 $headers = @get_headers($domain);

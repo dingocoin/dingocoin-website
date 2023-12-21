@@ -1,7 +1,7 @@
 <div class="alert alert-info text-center" role="alert">
     <?php
     // Set the message variable
-    $selectedMessage = 'trailmap_now';
+    $selectedMessage = 'new_section';
 
     // Display different messages based on the selected value
     switch ($selectedMessage) {
@@ -32,7 +32,7 @@
             break;
 
         case 'new_section':
-            echo "New Section Now Open! See New Our New (Section Name) Section";
+            echo "New Section Now Open! See Our New Trailmap Flip Section";
             break;
             
         case 'custom_alert':
