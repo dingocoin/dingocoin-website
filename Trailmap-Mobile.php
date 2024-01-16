@@ -37,18 +37,16 @@
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
 
-    <link href="https://fonts.googleapis.com" rel="preconnect" crossorigin="anonymous">
-    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&family=Roboto:wght@500;700&display=swap" rel="stylesheet" crossorigin="anonymous">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet" crossorigin="anonymous">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" rel="stylesheet" crossorigin="anonymous">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet" crossorigin="anonymous">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet" crossorigin="anonymous">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" rel="stylesheet" crossorigin="anonymous">
-    <link href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" rel="stylesheet" crossorigin="anonymous">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.0.47/jquery.fancybox.min.css" rel="stylesheet" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&family=Roboto:wght@500;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
     <link href="lib/animate/animate.min.css" rel="stylesheet">
     <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.0.47/jquery.fancybox.min.css" />
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
 
@@ -76,30 +74,29 @@
         <div class="carousel-inner">
             <div class="carousel-item active">
                 <img class="d-block w-100" src="/data1/images/htrailmap.jpg"
-                    alt="Wallet Header">
+                    alt="Trailmap Header">
             </div>
         </div>
     </div>
 
     <?php include 'includes/pages/trailmap-alert.php'; ?>
     <?php
-        if (!@include('includes/pages/trailmap_payments.html')) {
-            echo '<div class="container-xxl py-5">
-	                <div class="container">
-                        <div class="text-center mx-auto  fadeInUp" data--delay="0.1s" style="max-width: 500px;">
-                            <h1 class="display-6">TrailMap Browser Wallet</h1>
-                        </div>
-                        <div class="row justify-content-center text-center">
-                            <span>TrailMap Browser Wallet Module Loading ......<br> <small>Error: <small>Error: std-dxQH1</small></span>
-                        </div> 
+        if (!@include('includes/pages/trailmap_mobile.html')) {
+            echo '<div class="container">
+                    <div class="text-center mx-auto  fadeInUp" data--delay="0.1s" style="max-width: 500px;">
+                        <h1 class="display-6">TrailMap Browser Wallet</h1>
                     </div>
-                  </div>
+                    <div class="row justify-content-center text-center">
+                        <span>Flip Module Loading ......<br> <small>Error: <small>Error: std-dxQH1</small></span>
+                    </div> 
+                </div>
+
                  ';
         }
     ?> 
 
     <?php include ('includes/pages/footer.html');?>
-    <?php include ('includes/pages/2top.html'); ?>
+    <?php include ('includes/pages/2top-pups.html'); ?>
 
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
@@ -107,9 +104,7 @@
     <script src="lib/easing/easing.min.js"></script>
     <script src="lib/waypoints/waypoints.min.js"></script>
     <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-    <script src="lib/counterup/counterup.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.0.47/jquery.fancybox.min.js"></script>
 
 </body>
