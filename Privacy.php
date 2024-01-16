@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-    <title>Dingocoin | Charts & Exchanges</title>
+    <title>Dingocoin | Privacy Policy</title>
 
     <meta content="Dingocoin is the most successful cryptocurrency fork of Dogecoin, with revolutionary innovations and unstoppable developments." name="description">
     <meta content="SuperTechDudes in conjunction with Dingocoin" name="author">
