@@ -9,19 +9,23 @@
     <priority>0.99</priority>
   </url>
   <url>
-    <loc>https://dingocoin.com/Charts-Exchanges</loc>
+    <loc>https://dingocoin.com/Trailmap-Mobile</loc>
     <priority>0.98</priority>
   </url>
   <url>
-    <loc>https://dingocoin.com/Community-Projects</loc>
+    <loc>https://dingocoin.com/Charts-Exchanges</loc>
     <priority>0.97</priority>
+  </url>
+  <url>
+    <loc>https://dingocoin.com/Community-Projects</loc>
+    <priority>0.96</priority>
   </url>
     <url>
     <loc>https://dingocoin.com/Trailmap</loc>
-    <priority>0.96</priority>
+    <priority>0.95</priority>
   </url>
   <url>
     <loc>https://dingocoin.com/Contact</loc>
-    <priority>0.95</priority>
+    <priority>0.94</priority>
   </url>
 </urlset>
