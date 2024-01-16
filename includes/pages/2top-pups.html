@@ -1,3 +1,21 @@
-<a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top">
-    <img src="img/2top/christmas-pup-pack.png" alt="Up Arrow">
-  </a>
+<a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top" id="randomImageLink">
+  <img id="randomImage" src="" alt="Up Arrow">
+</a>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  // Array of image URLs
+  var imageUrls = [
+      'img/2top/norm-pup-solo-b2t.png',
+      'img/2top/norm-pup-solo-b2t-2.png',
+      'img/2top/norm-pup-solo-b2t-3.png',
+  ];
+
+  // Get a random index from the array
+  var randomIndex = Math.floor(Math.random() * imageUrls.length);
+
+  // Get the image element and set its src attribute
+  var randomImage = document.getElementById('randomImage');
+  randomImage.src = imageUrls[randomIndex];
+});
+</script>
