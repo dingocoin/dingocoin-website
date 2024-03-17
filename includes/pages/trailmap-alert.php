@@ -1,7 +1,7 @@
 <div class="alert alert-info text-center" role="alert">
     <?php
     // Set the message variable
-    $selectedMessage = 'new_section';
+    $selectedMessage = 'custom_alert';
 
     // Display different messages based on the selected value
     switch ($selectedMessage) {
@@ -36,7 +36,7 @@
             break;
             
         case 'custom_alert':
-            echo "Enter Custom Message Here";
+            echo "Updated White Paper Now Avaliable Under Resources";
             break;        
 
         default:
