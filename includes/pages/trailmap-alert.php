@@ -36,7 +36,7 @@
             break;
             
         case 'custom_alert':
-            echo "Enter Custom Message Here";
+            echo "Updated White Paper Now Available Under Resources";
             break;        
 
         default:
