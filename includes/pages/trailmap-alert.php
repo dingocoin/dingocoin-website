@@ -36,11 +36,12 @@
             break;
             
         case 'custom_alert':
-            echo "Updated White Paper Now Avaliable Under Resources";
+            echo "Updated White Paper Now Available Under Resources";
             break;        
 
         default:
             echo "Welcome To Dingocoin. Much King Dingo Such Wild Doge";
+        break; 
     }
     ?>
 </div>
