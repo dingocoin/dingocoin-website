@@ -50,20 +50,7 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
 </head>
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-210617812-1"></script>
-<!--<script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
-    gtag('config', 'UA-210617812-1');
-</script>
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-P30Q0K21WP"></script> -->
-<script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
-    gtag('config', 'G-P30Q0K21WP');
-</script>
+
 <body>
     <?php include ('includes/pages/top_nav.html');?>
 

@@ -1,11 +1,38 @@
 RewriteEngine on
+
+# Rewrite URLs with .php extension
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME}.php -f
-RewriteRule ^(.*)$ $1.php
-RewriteEngine on
+RewriteRule ^(.*)$ $1.php [L]
+
+# Rewrite URLs with .html extension
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME}.html -f
-RewriteRule ^(.*)$ $1.html
+RewriteRule ^(.*)$ $1.html [L]
 
-# Redirect to https://dingocoin/maint-mode/index.php
-# RewriteRule ^(.*)$ https://dingocoin/maint-mode/index.php [R=301,L]
+# Serve WebP image if supported by the browser
+<IfModule mod_rewrite.c>
+    RewriteCond %{HTTP_ACCEPT} image/webp
+
+    # Check if the requested file is a JPEG or PNG image
+    RewriteCond %{REQUEST_FILENAME} -f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    #RewriteCond %{REQUEST_URI} ^(.+)\.(jpe?g|png)$
+    #RewriteCond %{DOCUMENT_ROOT}%1.webp -f
+
+    # Serve WebP version if supported
+    RewriteRule (.+)\.(jpe?g|png)$ $1.$2.webp [T=image/webp,E=accept:1]
+
+    # Redirect requests for WebP images to the original image
+    RewriteCond %{HTTP_ACCEPT} !image/webp
+    #RewriteRule (.+)\.(jpe?g|png)\.webp$ $1.$2 [L]
+</IfModule>
+
+# Maint Mode - uncomment next two lines below to turn on - comment-out to turn off
+#RewriteCond %{REQUEST_URI} !/maint-mode/index.php$
+#RewriteRule ^(.*)$ https://dingocoin.com/maint-mode/index.php [R=307,L]
+
+# 301 Redirect in case have to roll to .org ONLY!!!!!
+#Redirect from dingocoin.com to dingcoin.org
+#RewriteCond %{HTTP_HOST} ^dingocoin\.com [NC]
+#RewriteRule ^(.*)$ https://dingcoin.org/$1 [R=301,L]
