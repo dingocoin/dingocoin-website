@@ -28,7 +28,8 @@ RewriteRule ^(.*)$ $1.html [L]
     #RewriteRule (.+)\.(jpe?g|png)\.webp$ $1.$2 [L]
 </IfModule>
 
-# Maint Mode - uncomment next two lines below to turn on - comment-out to turn off
+# Maint Mode - uncomment below two lines to turn on, commentout to turn off
+
 #RewriteCond %{REQUEST_URI} !/maint-mode/index.php$
 #RewriteRule ^(.*)$ https://dingocoin.com/maint-mode/index.php [R=307,L]
 
