@@ -1,6 +1,6 @@
 // Where To Buy Scroller 
 const baseURL = "";
-    const baseImgURL = "https://dev.dingocoin.com/img/exchanges/";
+    const baseImgURL = "https://dingocoin.com/img/exchanges/";
 
     const exchanges = [
 	  { name: "AscendEX", img: "ascendex-2" },	
