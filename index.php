@@ -707,13 +707,13 @@
                                         <p class="text-center">BIT & Dingocoin AMA</p>
                                         <div class="d-flex justify-content-center align-items-center">
                                             <span>December 26th 2024 
-                                                <button id="playButton3" class="btn btn-primary btn-sm" style="margin-left: 8px; padding: 0.25rem 0.5rem; font-size: 0.75rem;" disabled>Play Audio</button></span>
+                                                <button id="playButton3" class="btn btn-primary btn-sm" style="margin-left: 8px; padding: 0.25rem 0.5rem; font-size: 0.75rem;">Play Audio</button></span>
                                         </div>
                                         <!-- AMA 3 Audio Controls -->
                                         <audio controls
                                             style="display: block; width: 100%; height: 30px; margin-top: 10px;"
-                                            id="lazyAudio4">
-                                            <source id="audioSource4" type="audio/mpeg" />
+                                            id="lazyAudio3">
+                                            <source id="audioSource3" type="audio/mpeg" />
                                             Your browser does not support the audio element.
                                         </audio>
                                         <hr>
@@ -721,7 +721,7 @@
                                         <p class="text-center">DingoCoin & Fl!p AMA</p>
                                         <div class="d-flex justify-content-center align-items-center">
                                             <span>December 27th 2024 
-                                                <button id="playButton4" class="btn btn-primary btn-sm" style="margin-left: 8px; padding: 0.25rem 0.5rem; font-size: 0.75rem;" disabled>Play Audio</button></span>
+                                                <button id="playButton4" class="btn btn-primary btn-sm" style="margin-left: 8px; padding: 0.25rem 0.5rem; font-size: 0.75rem;">Play Audio</button></span>
                                         </div>
                                         <!-- AMA 4 Audio Controls -->
                                         <audio controls
@@ -739,10 +739,10 @@
                         // JavaScript for handling audio playback
                         document.getElementById('playButton1').addEventListener('click', function() {
                             const audioSource1 = document.getElementById('audioSource1');
-                            audioSource1.src = '/includes/media/ama/dingo-april-24-ama.mp3'; 
+                            audioSource1.src = '/includes/media/ama/dingo-april-24-ama.mp3';
                             document.getElementById('lazyAudio1').load();
                             document.getElementById('lazyAudio1').play().catch(function(error) {
-                                console.error('Playback failed:', error); // Log any playback errors
+                                console.error('Playback failed:', error);
                             });
                         });
 
@@ -752,25 +752,25 @@
                             audioSource2.src = '/includes/media/ama/dingocoin-ama-12-23-24.mp3'; 
                             document.getElementById('lazyAudio2').load();
                             document.getElementById('lazyAudio2').play().catch(function(error) {
-                            console.error('Playback failed:', error); // Log any playback errors
+                            console.error('Playback failed:', error);
                             });
                         });
 
                         document.getElementById('playButton3').addEventListener('click', function() {
                             const audioSource3 = document.getElementById('audioSource3');
-                            audioSource3.src = 'URL_TO_AUDIO_FILE_3.mp3'; 
-                            document.getElementById('lazyAudio3').load();
+                            audioSource3.src = '/includes/media/ama/dingocoin-ama-12-26-24.mp3'; // Ensure this path is correct
+                            document.getElementById('lazyAudio3').load(); // Load the audio
                             document.getElementById('lazyAudio3').play().catch(function(error) {
-                                console.error('Playback failed:', error); // Log any playback errors
+                                console.error('Playback failed:', error);
                             });
                         });
 
                         document.getElementById('playButton4').addEventListener('click', function() {
-                            const audioSource3 = document.getElementById('audioSource4');
-                            audioSource3.src = 'URL_TO_AUDIO_FILE_4.mp3'; 
-                            document.getElementById('lazyAudio4').load();
+                            const audioSource4 = document.getElementById('audioSource4');
+                            audioSource4.src = '/includes/media/ama/dingocoin-ama-12-27-24.mp3'; // Ensure this path is correct
+                            document.getElementById('lazyAudio4').load(); // Load the audio
                             document.getElementById('lazyAudio4').play().catch(function(error) {
-                                console.error('Playback failed:', error); // Log any playback errors
+                                console.error('Playback failed:', error);
                             });
                         });
                     </script>
