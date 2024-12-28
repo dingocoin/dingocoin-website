@@ -14,33 +14,50 @@ RewriteRule ^(.*)$ $1.html [L]
 <IfModule mod_rewrite.c>
     RewriteCond %{HTTP_ACCEPT} image/webp
 
-    # Check if the requested file is a JPEG or PNG image
-    RewriteCond %{REQUEST_FILENAME} -f
-    RewriteCond %{REQUEST_FILENAME} !-d
-    #RewriteCond %{REQUEST_URI} ^(.+)\.(jpe?g|png)$
-    #RewriteCond %{DOCUMENT_ROOT}%1.webp -f
+# Check if the requested file is a JPEG or PNG image
+   RewriteCond %{REQUEST_FILENAME} -f
+   RewriteCond %{REQUEST_FILENAME} !-d
+   RewriteCond %{REQUEST_URI} ^(.+)\.(jpe?g|png)$
+   RewriteCond %{DOCUMENT_ROOT}%1.webp -f
 
-    # Serve WebP version if supported
-    RewriteRule (.+)\.(jpe?g|png)$ $1.$2.webp [T=image/webp,E=accept:1]
+# Serve WebP version if supported
+   RewriteRule (.+)\.(jpe?g|png)$ $1.$2.webp [T=image/webp,E=accept:1]
 
-    # Redirect requests for WebP images to the original image
+# Redirect requests for WebP images to the original image
     RewriteCond %{HTTP_ACCEPT} !image/webp
-    #RewriteRule (.+)\.(jpe?g|png)\.webp$ $1.$2 [L]
+    RewriteRule (.+)\.(jpe?g|png)\.webp$ $1.$2 [L]
 </IfModule>
+
+# WhitePaper Redirect old to new PDF
+Redirect 301 /downloads/whitepaper/DingocoinWhitePaper.pdf https://dingocoin.com/dingocoin.pdf
+
+# Browser Caching
+#<IfModule mod_expires.c>
+#  ExpiresActive On
+#  ExpiresDefault "access plus 1 month"
+#  ExpiresByType image/jpg "access plus 1 year"
+#  ExpiresByType image/jpeg "access plus 1 year"
+#  ExpiresByType image/gif "access plus 1 year"
+#  ExpiresByType image/webp "access plus 1 year"
+#  ExpiresByType image/png "access plus 1 year"
+#  ExpiresByType text/css "access plus 1 year"
+#  ExpiresByType application/javascript "access plus 1 year"
+#</IfModule>
 
 
 ############ IMPORTANT ############
-# If either of the following are used. After comment/uncomment you must run as sudo
-# Command:
-# sudo systemctl restart apache2
+# If either of the following are used, after comment/uncomment you must run with sudo:
+# Command: sudo systemctl restart apache2
 #
 ##################################
 
-# Maint Mode - uncomment below two lines to turn on, comment-out to turn off
+# Maint Mode - uncomment below to turn on, comment-out with #to turn off
 #RewriteCond %{REQUEST_URI} !/maint-mode/index.php$
 #RewriteRule ^(.*)$ https://dingocoin.com/maint-mode/index.php [R=307,L]
 
-# 301 Redirect in case have to roll to .org ONLY!!!!!
-#Redirect from dingocoin.com to dingcoin.org
+#################################
+
+# 301 Redirect in case of rolling to .org ONLY!!!!!
+# Redirect from dingocoin.com to dingcoin.org
 #RewriteCond %{HTTP_HOST} ^dingocoin\.com [NC]
 #RewriteRule ^(.*)$ https://dingcoin.org/$1 [R=301,L]
