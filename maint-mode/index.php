@@ -47,20 +47,7 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
 </head>
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-210617812-1"></script>
-<!--<script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
-    gtag('config', 'UA-210617812-1');
-</script>
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-P30Q0K21WP"></script> -->
-<script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
-    gtag('config', 'G-P30Q0K21WP');
-</script>
+
 <body>
     <?php include('includes/pages/top_nav.html'); ?>
     <div class="container-xxl ply-5">
@@ -77,11 +64,9 @@
                         <div class="card-body">
                             <img alt="Image description" src="img/maint/maint1.gif" style="width: 100%; height: auto;">
                             <p class="text-center"></p> 
-                            <p class="text-center">Dingocoin Website Is Down For Maintenance</p> 
+                            <p class="text-center">Down For Maintenance</p> 
                             <p class="text-center"><br>We are undergoing some system upgrades at this time. </p>
                             <p class="text-center">Please check back later.</p> 
-                            <p class="text-center">Follow us on <a href="https://discord.gg/y3J946HFQM" target="_blank" rel="nofollow noopener noreferrer">Discord</a> for all our latest updates</p>
-                        </div>
                     </div>
                 </div>
             </div>
@@ -89,7 +74,5 @@
     </div>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </body>
 </html>
