@@ -849,7 +849,7 @@
                                     </div>
                                 </section>
                                 <!-- Exchange Section for TradeOgre -->
-                                <section class="col-md-6 my-4 text-center flex-fill">
+                                <!--<section class="col-md-6 my-4 text-center flex-fill">
                                     <div>
                                         <img src="img/exchanges/tradeogre-2.webp" alt="TradeOgre Logo" class="logo-img grayscale"
                                             style="width: 125px; height: auto; filter: brightness(0) invert(1);" loading="lazy">
@@ -859,7 +859,7 @@
                                         <a href="https://tradeogre.com/exchange/DINGO-USDT" class="btn btn-primary me-2"
                                             aria-label="Visit TradeOgre USDT" target="_blank" rel="nofollow">USDT</a>
                                     </div>
-                                </section>
+                                </section> -->
                                 <!-- Exchange Section for Raydium -->
                                 <section class="col-md-6 my-4 text-center flex-fill">
                                     <div>
@@ -874,7 +874,7 @@
                                     </div>
                                 </section>
                                 <!-- Exchange Section for LBank -->
-                                <section class="col-md-6 my-4 text-center flex-fill">
+                             <!--   <section class="col-md-6 my-4 text-center flex-fill">
                                     <div>
                                         <img src="img/exchanges/lbank-2.webp" alt="LBank Logo" class="logo-img grayscale"
                                             style="width: 125px; height: auto; filter: brightness(0) invert(1);" loading="lazy">
@@ -884,7 +884,7 @@
                                         <a href="https://www.lbank.info/exchange/dingo/usdt" class="btn btn-primary me-2"
                                             aria-label="Visit LBank USDT" target="_blank" rel="nofollow">USDT</a>
                                     </div>
-                                </section>
+                                </section> -->
                                 <!-- Exchange Section for PancakeSwap -->
                                 <section class="col-md-6 my-4 text-center flex-fill">
                                     <div>
