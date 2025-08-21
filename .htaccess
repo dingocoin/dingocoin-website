@@ -1,0 +1,74 @@
+RewriteEngine on
+
+# ===========================
+# URL Rewriting Rules
+# ===========================
+
+# Rewrite URLs with .php extension
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}.php -f
+RewriteRule ^(.*)$ $1.php [L]
+
+# Rewrite URLs with .html extension
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}.html -f
+RewriteRule ^(.*)$ $1.html [L]
+
+# ===========================
+# WebP Image Handling
+# ===========================
+
+# Serve WebP image if supported by the browser
+<IfModule mod_rewrite.c>
+    RewriteCond %{HTTP_ACCEPT} image/webp
+
+    # Check if the requested file is a JPEG or PNG image
+    RewriteCond %{REQUEST_FILENAME} -f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_URI} ^(.+)\.(jpe?g|png)$
+    RewriteCond %{DOCUMENT_ROOT}%1.webp -f
+
+    # Serve WebP version if supported
+    RewriteRule (.+)\.(jpe?g|png)$ $1.$2.webp [T=image/webp,E=accept:1]
+
+    # Redirect requests for WebP images to the original image
+    RewriteCond %{HTTP_ACCEPT} !image/webp
+    RewriteRule (.+)\.(jpe?g|png)\.webp$ $1.$2 [L]
+</IfModule>
+
+# ===========================
+# Redirects
+# ===========================
+
+# WhitePaper Redirect old to new PDF
+
+Redirect 301 /downloads/whitepaper/DingocoinWhitePaper.pdf /dingocoin.pdf
+
+#Redirect 301 https://dingocoin.com/downloads/whitepaper/DingocoinWhitePaper.pdf https://dingocoin.com/dingocoin.pdf
+
+# Redirect /wallets to the anchor link
+Redirect 301 /wallets https://dingocoin.com/#wallets
+
+# ===========================
+# Maintenance Mode
+# ===========================
+
+############ IMPORTANT ############
+# If either of the following are used, after comment/uncomment you must run with sudo:
+# Command: sudo systemctl restart apache2
+#
+##################################
+
+# Maint Mode - uncomment below to turn on, comment-out with #to turn off
+#RewriteCond %{REQUEST_URI} !/maint-mode/index.php$
+#RewriteRule ^(.*)$ https://dingocoin.com/maint-mode/index.php [R=307,L]
+
+# ===========================
+# Domain Redirects
+# ===========================
+
+# 301 Redirect in case of rolling to .org ONLY!!!!!
+# Redirect from dingocoin.com to dingcoin.org
+#RewriteCond %{HTTP_HOST} ^dingocoin\.com [NC]
+#RewriteRule ^(.*)$ https://dingcoin.org/$1 [R=301,L]
+
