@@ -110,7 +110,7 @@ dingocoin-website-dev/
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/dingocoin/dingocoin-website-dev.git
+   git clone https://github.com/dingocoin/dingocoin-website.git
    cd dingocoin-website-dev
    ```
 
@@ -367,4 +367,5 @@ We welcome contributions to improve the Dingocoin website! Here's how you can he
 - **📋 Changelog**: Check commit history for recent changes
 
 ---
+
 
