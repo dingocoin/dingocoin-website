@@ -1,19 +1,5 @@
 # Dingocoin Website - Comprehensive Technical Documentation
 
-## Table of Contents
-1. [Project Overview](#project-overview)
-2. [Architecture Overview](#architecture-overview)
-3. [File Structure](#file-structure)
-4. [PHP Processing & Server-Side Logic](#php-processing--server-side-logic)
-5. [JavaScript Functionality & Client-Side Interactions](#javascript-functionality--client-side-interactions)
-6. [Data Flow & Processing](#data-flow--processing)
-7. [Frontend Components](#frontend-components)
-8. [Performance Optimizations](#performance-optimizations)
-9. [Security Considerations](#security-considerations)
-10. [Deployment & Maintenance](#deployment--maintenance)
-
----
-
 ## Project Overview
 
 The Dingocoin website is a modern, responsive cryptocurrency project website built using PHP for server-side processing and vanilla JavaScript for client-side interactions. It serves as the main hub for the Dingocoin cryptocurrency community, providing information, wallet downloads, market data, and various interactive features.
@@ -670,3 +656,4 @@ Key strengths include:
 - **Maintainability**: Clean code structure and documentation
 
 This documentation serves as a comprehensive guide for developers working on the Dingocoin website, providing both high-level architectural understanding and detailed code-level analysis.
+
