@@ -1,0 +1,10 @@
+services:
+  web:
+    image: php:8.2-apache
+    ports:
+      - "8080:80"
+    volumes:
+      - .:/var/www/html
+    environment:
+      # Use committed fixture for homepage stats (no production eco.js required)
+      DINGOECO_USE_FIXTURES: "1"
