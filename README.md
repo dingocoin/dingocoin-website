@@ -160,6 +160,22 @@ dingocoin-website-dev/
    - Test responsive design on different screen sizes
    - Verify blog posts load properly
 
+### Local test data (no API keys)
+
+Homepage stats are read from `api/data/eco.js` when that file exists (typically deployed from your pipeline). For **local development without that file**, the site uses the committed **`api/data/eco.fixture.js`** automatically.
+
+- **Force fixtures** (e.g. to avoid overwriting a real `eco.js`): set `DINGOECO_USE_FIXTURES=1` in the environment.
+- **Optional real file**: add `api/data/eco.js` (same `const ecoData = { ... };` format). It is gitignored so it is not committed.
+
+**Docker (PHP + Apache on port 8080, fixtures enabled):**
+
+```bash
+docker compose up
+# http://localhost:8080/index.php
+```
+
+**Mining calculator** (`Mining-Profits.html`): append **`?fixtures=1`** to the URL, or run `localStorage.setItem('dingocoin_mining_fixtures','1')` in the console, so difficulty and price load from **`fixtures/mining-calculator.json`** instead of the explorer and CoinGecko APIs.
+
 ### Environment Configuration
 
 1. **PHP Configuration**

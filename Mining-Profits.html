@@ -462,6 +462,12 @@
     </div>
 
     <script>
+        const miningFixtureParams = new URLSearchParams(window.location.search);
+        const useMiningFixtures =
+            miningFixtureParams.get('fixtures') === '1' ||
+            miningFixtureParams.get('fixtures') === 'true' ||
+            window.localStorage.getItem('dingocoin_mining_fixtures') === '1';
+
         async function fetchBlockReward() {
             try {
 
@@ -474,6 +480,13 @@
 
         async function fetchDifficulty() {
             try {
+                if (useMiningFixtures) {
+                    const response = await fetch('fixtures/mining-calculator.json');
+                    if (!response.ok) throw new Error('Failed to load fixture difficulty');
+                    const data = await response.json();
+                    document.getElementById('difficultyFactor').value = data.explorerDifficulty;
+                    return;
+                }
                 const response = await fetch('https://explorer.dingocoin.com/api/getdifficulty');
                 if (!response.ok) throw new Error('Failed to fetch network difficulty');
                 const difficulty = await response.json();
@@ -485,6 +498,13 @@
 
         async function fetchMarketPrice() {
             try {
+                if (useMiningFixtures) {
+                    const response = await fetch('fixtures/mining-calculator.json');
+                    if (!response.ok) throw new Error('Failed to load fixture market price');
+                    const data = await response.json();
+                    document.getElementById('marketPrice').value = data.marketPriceUsd;
+                    return;
+                }
                 const response = await fetch('https://api.coingecko.com/api/v3/coins/dingocoin');
                 if (!response.ok) throw new Error('Failed to fetch market price');
 

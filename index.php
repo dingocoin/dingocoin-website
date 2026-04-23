@@ -171,16 +171,10 @@
             <!-- Wallet & Eco-System Section -->
             <?php
                 //===========================================
-                // Data Extraction from eco.js
+                // Data: api/data/eco.js (prod) or eco.fixture.js / DINGOECO_USE_FIXTURES
                 //===========================================
-                                                                
-                // Read the JS file contents
-                $js_content = file_get_contents(__DIR__ . '/api/data/eco.js');
-                                                            
-                // Parse ecoData JSON object from JS file
-                preg_match('/const ecoData = ({[^;]+});/', $js_content, $matches);
-                $json_str = str_replace('\"', '"', str_replace("\\/", "/", $matches[1]));
-                $ecoData = json_decode($json_str, true);
+                require_once __DIR__ . '/api/lib/eco_loader.php';
+                $ecoData = dingocoin_load_eco_data();
                                                             
                 //===========================================
                 // Extract Common Data Points
