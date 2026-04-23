@@ -36,10 +36,13 @@
     <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
 
-    <!-- Preload key resources -->
+    <!-- Preload key resources (same-origin CSS blocks FOUC better than CDN on cold cache) -->
     <link rel="preload" href="img/logos/dingocoin256.webp" as="image">
-    
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="preload" href="css/bootstrap.min.css" as="style">
+    <link rel="preload" href="css/style-blog-post.css" as="style">
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" crossorigin="anonymous" referrerpolicy="no-referrer">
     <link href="css/style-blog-post.css" rel="stylesheet">
 
     <title>Dingocoin - Your Gateway to Digital Currency</title>
@@ -1470,14 +1473,7 @@ ecosystem of rapid deployment for developers to integrate the browser wallet int
         </div>
     </footer>
 
-    <!-- Load Font Awesome for legacy browsers -->
-    <script nomodule defer src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
-    
-    <!-- Load Font Awesome for modern browsers -->
-    <script type="module">
-        import('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js');
-    </script>
-    <script defer src='https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js'></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
     <script>
         document.addEventListener("DOMContentLoaded", function() {
